@@ -24,7 +24,7 @@ export const Name = styled.p `
 export const Social = styled.img `
   margin-right: 10px;
   &:hover {
-    height: 35px;
+    height: 28px;
   }
   @media ${device.mobileS} {
     height: 25px;
