@@ -6,10 +6,10 @@ export const FooterStyle = styled.footer `
   height: 130px;
   text-align: center;
   margin-top: -25px;
-  padding-top: 8px;
+  padding-top: 8px; 
 `
 
-export const P = styled.p `
+export const P = styled.p ` 
   color: ${WHITE};
   font-family: 'Quicksand', sans-serif;
   margin-top: 10px;
