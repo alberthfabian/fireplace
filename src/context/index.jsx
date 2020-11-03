@@ -1,9 +1,6 @@
 // import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import React, { useMemo } from 'react';
-// import { DataProjects } from '../components/DataProjects';
-// import { DataBlog } from '../components/DataBlog';
-// import { Technologies } from '../components/Technologies';
-// import { DataDiplomas } from '../components/DataDiplomas'; 
+import { DataSocial } from '../components/DataSocial'; 
 import { DataFireplace } from '../components/DataFireplace';
 
 const Server = React.createContext();
@@ -36,7 +33,8 @@ export function ServerProvider(props) {
 
   const value = useMemo(() => {
     return ({
-      DataFireplace
+      DataFireplace,
+      DataSocial
     })
   }, []);
 

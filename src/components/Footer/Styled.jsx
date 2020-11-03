@@ -26,13 +26,3 @@ export const Name = styled.p `
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 10px;
 `
-
-export const Social = styled.img `
-  margin-right: 10px;
-  &:hover {
-    height: 28px;
-  }
-  @media ${device.mobileS} {
-    height: 25px;
-  }
-`
