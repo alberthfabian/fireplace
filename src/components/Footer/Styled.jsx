@@ -13,6 +13,12 @@ export const P = styled.p `
   color: ${WHITE};
   font-family: 'Quicksand', sans-serif;
   margin-top: 10px;
+  @media ${device.mobileS} {
+    font-size: 8px;
+  }
+  @media ${device.tablet} {
+    font-size: 12px;
+  }
 `
 
 export const Name = styled.p `

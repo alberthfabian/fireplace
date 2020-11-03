@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import background from '../../assets/Images/Background.jpg';
+import Fireplace from '../Fireplace';
 import { Mountains, Div, Name, Design, Data } from './Styled';
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
           <Design>Diseños exlusivos</Design>
         </Data>
       </Div>
+      <Fireplace/>
     </Fragment>
   );
 };

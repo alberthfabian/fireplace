@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 // import { DataBlog } from '../components/DataBlog';
 // import { Technologies } from '../components/Technologies';
 // import { DataDiplomas } from '../components/DataDiplomas'; 
-// import { DataAreas } from '../components/DataAreas';
+import { DataFireplace } from '../components/DataFireplace';
 
 const Server = React.createContext();
 
@@ -36,7 +36,7 @@ export function ServerProvider(props) {
 
   const value = useMemo(() => {
     return ({
-
+      DataFireplace
     })
   }, []);
 

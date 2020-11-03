@@ -7,8 +7,6 @@ export const Head = styled.header `
   justify-content: center;
   height: 130px;
   background-color: ${BLACK};
-  padding-left: 3%;
-  padding-right: 3%;
   display: flex;
   align-items: center;
   article {
