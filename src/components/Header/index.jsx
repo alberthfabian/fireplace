@@ -2,9 +2,13 @@ import React from 'react';
 // import Menu from '../Menu';
 import logo from '../../assets/Icons/Logo.png';
 // import Navbar from '../Navbar';
-import { Logo, Head, StyledLink } from './Styled.jsx';
+import Social from '../Social';
+import { useServer } from '../../context';
+import { Logo, Head, StyledLink, Div } from './Styled.jsx';
 
 const Header = () => {
+
+  const { DataSocial } = useServer();
 
   return (
     <Head>
@@ -14,6 +18,11 @@ const Header = () => {
           <h1>Papelería Golden</h1>
         </StyledLink>
       </article>
+      <Div>
+        {DataSocial.map(social => (
+          <Social key={social.id} name={social.name} url={social.url}/>
+        ))}
+      </Div>
       {/* <Menu/>
       <Navbar/> */}
     </Head>

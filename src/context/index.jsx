@@ -1,5 +1,5 @@
-// import React, { useEffect, useMemo, useState, useCallback } from 'react';
-import React, { useMemo } from 'react';
+// import React, { useEffect, useMemo } from 'react';
+import React, { useMemo, useCallback, useState } from 'react';
 import { DataSocial } from '../components/DataSocial'; 
 import { DataFireplace } from '../components/DataFireplace';
 
@@ -7,36 +7,30 @@ const Server = React.createContext();
 
 export function ServerProvider(props) {
 
-  // const[ onlyDiploma, setOnlyDiploma ] = useState([]);
-  // const[ menu, setMenu ] = useState(false);
-  // const[ diploma, setDiploma ] = useState(false);
-  // const[ detail, setDetail ] = useState({});
+  const[ onlyFireplace, setOnlyFireplace ] = useState([]);
+  const[ Open, setOpen ] = useState(false);
 
-  // const Blog = useCallback((id) => {
-  //   const value = DataBlog.filter(blog => blog.id === parseInt(id));
-  //   setDetail(value[0]);
-  // },[])
+  const ImgFire = useCallback((id) => {
+    const fire = document.getElementById(id).id;
+    setOpen(fire);
+    const data = DataFireplace.filter(fire => fire.id === parseInt(id));
+    setOnlyFireplace(data[0]);
+  },[]); 
 
-  // const openDiploma = useCallback((type, id) => {
-  //   const diploma = DataDiplomas.filter(diploma => diploma.type === type);
-  //   const value = diploma[0].description.filter(value => value.id === parseInt(id));
-  //   setOnlyDiploma(value[0]);
-  // },[]);
-
-  // const modalOpen = useCallback((open) => {
-  //   setDiploma(open);
-  // },[])
-
-  // const modal = useCallback((e) => {
-  //   setMenu(e);
-  // },[]);
+  const ModalClose = useCallback((e) => {
+    setOpen(e);
+  },[]);
 
   const value = useMemo(() => {
     return ({
+      onlyFireplace,
+      Open,
       DataFireplace,
-      DataSocial
+      DataSocial,
+      ImgFire,
+      ModalClose
     })
-  }, []);
+  }, [onlyFireplace, Open, ImgFire, ModalClose]);
 
   return <Server.Provider value={value} {...props} />
 }

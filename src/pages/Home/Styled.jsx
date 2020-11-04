@@ -73,9 +73,10 @@ export const Photo = styled.img `
 
 export const Name = styled.p `
   font-family: 'Quicksand', sans-serif;
-  color: ${BLACK};
+  color: ${WHITE};
   text-align: center;
   font-size: xx-large;
+  text-shadow: 5px 5px 1px ${BLACK};
   @media ${device.mobileS} { 
     font-size: 27px;
   }
@@ -101,6 +102,7 @@ export const Design = styled.p `
   color: ${WHITE};
   text-align: center;
   font-size: x-large;
+  text-shadow: 5px 5px 1px ${BLACK};
   @media ${device.mobileS} { 
     font-size: 19px;
     margin-top: 40px;

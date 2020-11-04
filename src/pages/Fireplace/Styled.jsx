@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { BLACK, WHITE, device } from '../../components/Styled';
+import { BLACK, WHITE, ORANGE, device } from '../../components/Styled';
 
 export const Div = styled.div `
   background-color: ${BLACK};
+  text-align: center;
   padding-top: 20px;
   width: 100%;
   height: 100%;
@@ -28,8 +29,9 @@ export const Div = styled.div `
 
 export const H1 = styled.h1 ` 
   text-align: center;
-  color: ${WHITE};
+  color: ${ORANGE};
   background: ${BLACK};
-  margin: 0px;
+  text-shadow: 1px 1px 1px ${WHITE};
+  margin: -1px;
   padding: 20px;
 `

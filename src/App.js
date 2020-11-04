@@ -5,11 +5,13 @@ import { ServerProvider } from './context';
 import WhatsApp from './components/WhatsApp';
 import PageNotFound from './components/PageNotFound';
 import Home from './pages/Home';
+import Modal from './components/Modal';
 import "./App.css";
 
 const App = () => (
   <ServerProvider>
     <BrowserRouter>
+      <Modal/>
       <Layout>
         <Switch>
           <Route exact path='/' component={Home}/>

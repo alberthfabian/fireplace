@@ -15,7 +15,7 @@ const Fireplace = () => {
         {/* <ModalDiploma/> */}
         {DataFireplace.map(fireplace => (
           <span key={fireplace.id}>
-            <Sections name={fireplace.name}/>
+            <Sections name={fireplace.name} id={fireplace.id}/>
           </span>
         ))}
       </Div>

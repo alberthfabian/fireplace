@@ -1,16 +1,18 @@
 import React from 'react';
 import { getIcon } from '../Images';
-import { Section } from './Styled';
+import { useServer } from '../../context';
+import { Button } from './Styled';
 
 const Sections = (props) => {
   
-  const { name } = props; 
+  const { name, id } = props; 
+  const { ImgFire } = useServer(); 
   
   return (
     <>
-      <Section>
+      <Button id={id} onClick={() => {ImgFire(id)}}>
         <img src={getIcon(name)} alt={name}/>
-      </Section>
+      </Button>
     </>
   )
 };

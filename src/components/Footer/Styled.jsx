@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { WHITE, RED, BLACK, device } from '../Styled';
+import { WHITE, BLACK, ORANGE, device } from '../Styled';
 
 export const FooterStyle = styled.footer `
   background-color: ${BLACK};
@@ -22,7 +22,8 @@ export const P = styled.p `
 `
 
 export const Name = styled.p `
-  color: ${RED};
+  color: ${ORANGE};
+  text-shadow: 0.5px 0.5px 1px ${WHITE};
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 10px;
 `
