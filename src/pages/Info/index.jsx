@@ -19,7 +19,6 @@ const Info = () => {
         <p>1 Guirnalda</p>
         <p>2 Troncos en icopor</p>
         <p>1 Juego de luces navideñas</p>
-        <p>1 Juego de luces navideñas</p>
         <p>1 Pliego de papel crepé</p>
         <br/>
         <h2>Características:</h2>
