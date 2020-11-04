@@ -7,6 +7,8 @@
 .credentials
 credentials.js
 credentials
+/credentials.js
+/credentials
 
 # dependencies
 /node_modules
