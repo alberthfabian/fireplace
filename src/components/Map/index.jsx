@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import credential from '../../credentials';
+import credential from '../../Credentials/credentials';
 import GoogleMaps from 'simple-react-google-maps';
 
 export default class Maps extends Component {
