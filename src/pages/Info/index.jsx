@@ -12,8 +12,8 @@ const Info = () => {
         <p>Dirección 2: Diagonal 45F Sur # 13F - 46</p>
         <p>Celular: 3124563067 - 3228107821</p>
         <br/>
-        <h3>Chimenea Naranja: $ 90.000 </h3>
-        <h3>Chimenea Blanca: $ 100.000 </h3>
+        <h3>Chimenea color ladrillo: $ 90.000 </h3>
+        <h3>Chimenea blanca: $ 100.000 </h3>
         <br/>
         <h2>Contiene:</h2>
         <p>4 Botas navideñas impresas en cartulina</p>
