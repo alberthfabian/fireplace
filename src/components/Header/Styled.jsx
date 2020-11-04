@@ -38,7 +38,7 @@ export const Logo = styled.img `
     height: 100px;
   }
   &:hover {
-    height: 75px;
+    height: 105px;
   }
 `
 
