@@ -3,6 +3,8 @@
 #File
 /.credentials.js
 /credentials.js
+.credentials.js
+.credentials
 
 # dependencies
 /node_modules
