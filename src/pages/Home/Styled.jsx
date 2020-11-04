@@ -76,7 +76,7 @@ export const Name = styled.p `
   color: ${WHITE};
   text-align: center;
   font-size: xx-large;
-  text-shadow: 5px 5px 1px ${BLACK};
+  text-shadow: 1px 1px 12px ${BLACK};
   @media ${device.mobileS} { 
     font-size: 27px;
   }
@@ -102,7 +102,7 @@ export const Design = styled.p `
   color: ${WHITE};
   text-align: center;
   font-size: x-large;
-  text-shadow: 5px 5px 1px ${BLACK};
+  text-shadow: 1px 1px 12px ${BLACK};
   @media ${device.mobileS} { 
     font-size: 19px;
     margin-top: 40px;

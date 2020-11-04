@@ -24,7 +24,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   h1 {
     color: ${WHITE};
-    text-shadow: 1px 1px 1px ${ORANGE};
+    text-shadow: 1px 1px 12px ${ORANGE};
     margin-top: 0px;
     margin-bottom: 0px;
   }
