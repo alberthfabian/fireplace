@@ -7,6 +7,7 @@ const images = {
   fireplace6: require('../../assets/Images/Chimenea6.jpeg').default,
   fireplace7: require('../../assets/Images/Chimenea7.jpeg').default,
   fireplace8: require('../../assets/Images/Chimenea8.jpeg').default,
+  sheep: require('../../assets/Images/sheep.jpeg').default,
   default: require('../../assets/Images/Chimenea1.jpeg').default, 
 }
 

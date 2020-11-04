@@ -30,5 +30,9 @@ export const DataFireplace = [
   {
     'id': 8,
     'name': 'fireplace8'
+  },
+  {
+    'id': 9,
+    'name': 'sheep'
   }
 ]
