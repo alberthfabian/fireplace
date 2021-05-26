@@ -2,7 +2,12 @@
 import React, { useMemo, useCallback, useState } from 'react';
 import { DataSocial } from '../components/DataSocial'; 
 import { DataFireplace } from '../components/DataFireplace';
-import { dataDocuments } from '../components/DataDocuments';
+import { criminalRecord } from '../components/Data/CriminalRecord';
+import { eps } from '../components/Data/Eps';
+import { pensionAndCesantias } from '../components/Data/PensionAndCesantias';
+import { taxes } from '../components/Data/Taxes';
+import { publicReceipts } from '../components/Data/PublicReceipts';
+import { dian } from '../components/Data/Dian';
 
 const Server = React.createContext();
 
@@ -30,7 +35,12 @@ export function ServerProvider(props) {
       DataSocial,
       ImgFire,
       ModalClose,
-      dataDocuments
+      criminalRecord,
+      eps,
+      pensionAndCesantias,
+      taxes,
+      publicReceipts,
+      dian
     })
   }, [onlyFireplace, Open, ImgFire, ModalClose]);
 

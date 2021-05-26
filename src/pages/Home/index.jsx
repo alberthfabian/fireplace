@@ -8,16 +8,66 @@ import { Title, Div, Card } from './Styled';
 
 const Home = () => {
 
-  const { dataDocuments } = useServer();
+  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian } = useServer();
 
   return (
     <Fragment>
       <div>
-        <Title>DOCUMENTOS PARA DESCARGAR</Title>
+        <Title>ANTECEDENTES</Title>
       </div>
       <Div>
         <Card>
-          {dataDocuments.map(document => (
+          {criminalRecord.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>EPS</Title>
+      </div>
+      <Div>
+        <Card>
+          {eps.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>PENSIÓN Y CESANTÍAS</Title>
+      </div>
+      <Div>
+        <Card>
+          {pensionAndCesantias.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>IMPUESTOS</Title>
+      </div>
+      <Div>
+        <Card>
+          {taxes.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>COPIA RECIBOS PÍBLICOS</Title>
+      </div>
+      <Div>
+        <Card>
+          {publicReceipts.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>DIAN</Title>
+      </div>
+      <Div>
+        <Card>
+          {dian.map(document => (
             <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
           ))}
         </Card>
