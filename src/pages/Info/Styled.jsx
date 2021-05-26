@@ -14,6 +14,7 @@ export const Div = styled.div `
 `
 export const Article = styled.div ` 
   margin: auto;
+  margin-top: 40px;
   @media ${device.mobileS} {
     width: 250px;
     height: 350px;

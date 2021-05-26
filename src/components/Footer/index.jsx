@@ -13,7 +13,7 @@ const Footer = () => {
       {DataSocial.map(social => (
         <Social key={social.id} name={social.name} url={social.url}/>
       ))}
-      <P>Todos los derechos reservados &copy; 2020</P>
+      <P>Todos los derechos reservados &copy; Papeleria Golden</P>
     </FooterStyle>
   )
 };

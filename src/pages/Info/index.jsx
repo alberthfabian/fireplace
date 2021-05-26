@@ -1,12 +1,13 @@
 import React from 'react';
 import Map from '../../components/Map'
-import { Div, Article, H2, Data } from './Styled';
+import { Div, Article } from './Styled';
+// import { Div, Article, H2, Data } from './Styled';
 
 const Info = () => {
   
   return ( 
     <Div>
-      <Data>
+      {/* <Data>
         <H2>Domicilios para la ciudad de Bogotá</H2>
         <p>Dirección 1: Diagonal 45A Sur # 13J - 34</p>
         <p>Dirección 2: Diagonal 45F Sur # 13F - 46</p>
@@ -27,7 +28,7 @@ const Info = () => {
         <p>Ancho: 90cm</p>
         <p>Altura: 86cm</p>
         <p>Fondo: 20cm</p>
-      </Data>
+      </Data> */}
       <Article>
         <Map/>
       </Article>

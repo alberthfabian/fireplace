@@ -2,6 +2,7 @@
 import React, { useMemo, useCallback, useState } from 'react';
 import { DataSocial } from '../components/DataSocial'; 
 import { DataFireplace } from '../components/DataFireplace';
+import { dataDocuments } from '../components/DataDocuments';
 
 const Server = React.createContext();
 
@@ -28,7 +29,8 @@ export function ServerProvider(props) {
       DataFireplace,
       DataSocial,
       ImgFire,
-      ModalClose
+      ModalClose,
+      dataDocuments
     })
   }, [onlyFireplace, Open, ImgFire, ModalClose]);
 

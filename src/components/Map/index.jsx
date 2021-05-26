@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import credential from '../../Credentials/credentials';
+import { mapsKey } from '../../Credentials';
 import GoogleMaps from 'simple-react-google-maps';
 
 export default class Maps extends Component {
   render() {
     return(
       <GoogleMaps
-        apiKey={credential.mapsKey}
+        apiKey={mapsKey}
         style={{ height: '100%', width: '100%' }}
         zoom={14}
         center={{
