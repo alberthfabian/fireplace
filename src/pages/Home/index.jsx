@@ -53,7 +53,7 @@ const Home = () => {
         </Card>
       </Div>
       <div>
-        <Title>COPIA RECIBOS PÍBLICOS</Title>
+        <Title>COPIA RECIBOS PÚBLICOS</Title>
       </div>
       <Div>
         <Card>
