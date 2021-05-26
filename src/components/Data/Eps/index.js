@@ -15,7 +15,7 @@ export const eps = [
   },
   {
     'id': 3,
-    'name': 'ALIAN SALUD EPS',
+    'name': 'ALIANSALUD EPS',
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.aliansalud.com.co/oficinavirtual/Paginas/Login.aspx'
@@ -50,7 +50,7 @@ export const eps = [
   },
   {
     'id': 8,
-    'name': 'MEDIÁS EPS',
+    'name': 'MEDIMÁS EPS',
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://heonmedimas.heon.com.co/medimas/Epsenlinea/EpsEnLineaAng/#/sesion'
