@@ -11,25 +11,25 @@ export const Card = styled.div `
   display: grid;
   grid-gap: 20px;
   @media ${device.mobileS} { 
-    grid-template-columns: 1fr;
-  }
-  @media ${device.mobileM} { 
-    grid-template-columns: 1fr;
-  }
-  @media ${device.mobileL} { 
-    grid-template-columns: 1fr;
-  }
-  @media ${device.tablet} { 
     grid-template-columns: 1fr 1fr;
   }
-  @media ${device.laptop} { 
+  @media ${device.mobileM} { 
+    grid-template-columns: 1fr 1fr;
+  }
+  @media ${device.mobileL} { 
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media ${device.tablet} { 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media ${device.laptop} { 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   @media ${device.laptopL} { 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   @media ${device.desktop} { 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 `
 

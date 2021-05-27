@@ -11,6 +11,7 @@ const index = ({name, video, linkVideo, linkDocument}) => {
 
   return (
     <Div>
+      <span className="tooltiptext">{name}</span>
       <Document onClick={() => page(linkDocument)}>
         {name}
       </Document>

@@ -8,7 +8,7 @@ import { Title, Div, Card } from './Styled';
 
 const Home = () => {
 
-  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian } = useServer();
+  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police } = useServer();
 
   return (
     <Fragment>
@@ -18,6 +18,16 @@ const Home = () => {
       <Div>
         <Card>
           {criminalRecord.map(document => (
+            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>POLICÍA</Title>
+      </div>
+      <Div>
+        <Card>
+          {police.map(document => (
             <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
           ))}
         </Card>
