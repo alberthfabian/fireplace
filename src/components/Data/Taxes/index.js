@@ -19,5 +19,12 @@ export const taxes = [
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://impuvehiculo.cundinamarca.gov.co/sivervcundinamarca/liquidacionweb/primeraa.php'
+  },
+  {
+    'id': 4,
+    'name': 'AVERIGUAR CHIP DE UN PREDIO',
+    'video': 'Video Tutorial',
+    'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
+    'linkDocument': 'https://catastroenlinea.catastrobogota.gov.co/cfoca/Servicios/ConsultaChip.jspx'
   }
 ]
