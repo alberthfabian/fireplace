@@ -9,7 +9,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
 
-  const { isAuthenticated } = useAuth0();
+  const { isAuthenticated, user } = useAuth0();
 
   const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police } = useServer();
 
@@ -27,7 +27,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument}
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -44,7 +44,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -61,7 +61,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -78,7 +78,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -95,7 +95,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -112,7 +112,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
@@ -129,7 +129,7 @@ const Home = () => {
               video={document.video} 
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
-              value={isAuthenticated ? document.value : '' }
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
             />
           ))}
         </Card>
