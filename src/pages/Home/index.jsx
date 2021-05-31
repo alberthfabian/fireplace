@@ -5,8 +5,11 @@ import Documents from '../../components/Documents';
 import Info from '../Info';
 import { useServer } from '../../context'; 
 import { Title, Div, Card } from './Styled';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
+
+  const { isAuthenticated } = useAuth0();
 
   const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police } = useServer();
 
@@ -18,7 +21,14 @@ const Home = () => {
       <Div>
         <Card>
           {criminalRecord.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument}
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -28,7 +38,14 @@ const Home = () => {
       <Div>
         <Card>
           {police.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -38,7 +55,14 @@ const Home = () => {
       <Div>
         <Card>
           {eps.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -48,7 +72,14 @@ const Home = () => {
       <Div>
         <Card>
           {pensionAndCesantias.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -58,7 +89,14 @@ const Home = () => {
       <Div>
         <Card>
           {taxes.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -68,7 +106,14 @@ const Home = () => {
       <Div>
         <Card>
           {publicReceipts.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>
@@ -78,7 +123,14 @@ const Home = () => {
       <Div>
         <Card>
           {dian.map(document => (
-            <Documents key={document.id} name={document.name} video={document.video} linkVideo={document.linkVideo} linkDocument={document.linkDocument} />
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated ? document.value : '' }
+            />
           ))}
         </Card>
       </Div>

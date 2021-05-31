@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import { Div, Document, Video, Link } from './Styled';
+import { Div, Document, Video, Link, Value } from './Styled';
 
-const index = ({name, video, linkVideo, linkDocument}) => {
+const index = ({name, video, linkVideo, linkDocument, value}) => {
 
   const page = (page) => {
     window.open(page)
@@ -18,6 +18,9 @@ const index = ({name, video, linkVideo, linkDocument}) => {
       <Video>
         <Link href={linkVideo} target='_blank' >{video}</Link> 
       </Video>
+      <Value>
+        {value}
+      </Value>
     </Div>
   );
 };

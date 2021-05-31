@@ -4,13 +4,15 @@ export const police = [
     'name': 'REPORTAR PÉRDIDA DE DOCUMENTOS',
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
-    'linkDocument': 'https://webrp.policia.gov.co:444/publico/Constancia.aspx'
+    'linkDocument': 'https://webrp.policia.gov.co:444/publico/Constancia.aspx',
+    'value': '1.000'
   },
   {
     'id': 2,
     'name': 'CONSTANCIA PÉRDIDA DE DOCUMENTOS',
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
-    'linkDocument': 'https://webrp.policia.gov.co:444/publico/buscador_constancia.aspx'
+    'linkDocument': 'https://webrp.policia.gov.co:444/publico/buscador_constancia.aspx',
+    'value': '1.000'
   }
 ]

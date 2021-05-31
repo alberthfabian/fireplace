@@ -3,6 +3,9 @@
 #File
 src/Credentials/
 
+#.env
+.env
+
 # dependencies
 /node_modules
 /.pnp

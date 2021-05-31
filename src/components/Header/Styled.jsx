@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { BLACK, WHITE, ORANGE, device } from '../Styled';
 
 export const Head = styled.header `
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: ${BLACK};
-  display: flex;
   align-items: center;
   @media ${device.mobileS} {
     height: 130px;
@@ -17,6 +17,21 @@ export const Head = styled.header `
   article {
     display: flex;
   }
+`
+
+export const ContainerLogo = styled.div ` 
+  display: flex;
+  justify-content: center;
+`
+
+export const ContainerLogin = styled.div ` 
+  display: flex;
+  justify-content: flex-end;
+`
+
+export const ContainerSocial = styled.div ` 
+  display: flex;
+  justify-content: flex-start;
 `
 
 export const StyledLink = styled(Link)`
@@ -43,7 +58,7 @@ export const Logo = styled.img `
 `
 
 export const Div = styled.div ` 
-  position: absolute;
+  /* position: absolute; */
   right: 25px;
   @media ${device.mobileS} {
     display: none;

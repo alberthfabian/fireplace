@@ -70,6 +70,14 @@ export const Video = styled.div `
   font-family: 'Quicksand', sans-serif;
 `
 
+export const Value = styled.div `
+  color: ${ORANGE};
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'Quicksand', sans-serif;
+`
+
 export const Link = styled.a ` 
   text-decoration: none;
   color: ${WHITE};
