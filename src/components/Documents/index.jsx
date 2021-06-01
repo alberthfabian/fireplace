@@ -19,7 +19,7 @@ const index = ({name, video, linkVideo, linkDocument, value}) => {
         <Link href={linkVideo} target='_blank' >{video}</Link> 
       </Video>
       <Value>
-        {`$ ${value}`}
+        {value ? `$ ${value}` : value}
       </Value>
     </Div>
   );
