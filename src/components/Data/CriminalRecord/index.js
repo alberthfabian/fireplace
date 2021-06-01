@@ -5,7 +5,8 @@ export const criminalRecord = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.procuraduria.gov.co/portal/Certificado-de-Antecedentes.page',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 2,
@@ -13,7 +14,8 @@ export const criminalRecord = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://antecedentes.policia.gov.co:7005/WebJudicial/',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 3,
@@ -21,7 +23,8 @@ export const criminalRecord = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.contraloria.gov.co/control-fiscal/responsabilidad-fiscal/control-fiscal/responsabilidad-fiscal/certificado-de-antecedentes-fiscales/persona-natural',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 4,
@@ -29,7 +32,8 @@ export const criminalRecord = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.contraloria.gov.co/control-fiscal/responsabilidad-fiscal/certificado-de-antecedentes-fiscales/certificado-de-antecedentes-fiscales/certificado-de-antecedentes-fiscales/persona-juridica',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 5,
@@ -37,6 +41,7 @@ export const criminalRecord = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.personeriabogota.gov.co/al-servicio-de-la-ciudad/expedicion-de-antecedentes',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   }
 ]

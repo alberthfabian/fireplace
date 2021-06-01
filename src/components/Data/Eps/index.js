@@ -5,7 +5,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.adres.gov.co/BDUA/Consulta-Afiliados-BDUA',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 2,
@@ -13,7 +14,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://appb.saludcapital.gov.co/Comprobadordederechos/Consulta.aspx',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 3,
@@ -21,7 +23,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.aliansalud.com.co/oficinavirtual/Paginas/Login.aspx',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y Clave'
   },
   {
     'id': 4,
@@ -29,7 +32,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'http://cooeps.coomeva.com.co/prod/afiliacion/php/ajax/afiliado/indexCertificadosAfiliado.php',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   },
   {
     'id': 5,
@@ -37,7 +41,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://seguridad2.compensar.com/sso/login/36656901cdc57c7f10b7467c55d315dd',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 6,
@@ -45,7 +50,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'http://www.cruzblanca.com.co/',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 7,
@@ -53,7 +59,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://enlinea.famisanar.com.co/Portal/home.jspx',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 8,
@@ -61,7 +68,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://heonmedimas.heon.com.co/medimas/Epsenlinea/EpsEnLineaAng/#/sesion',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 9,
@@ -69,7 +77,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://aplicaciones.nuevaeps.com.co/Portal/home.jspx',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 10,
@@ -77,7 +86,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.epssanitas.com/usuarios/web/nuevo-portal-eps/inicio?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_58_struts_action=%2Flogin%2Flogin#gsc.tab=0',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 11,
@@ -85,7 +95,8 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://transaccional.saludtotal.com.co/Transaccional/plataforma/ingresar.aspx?q=D4O1+zam3H0+eV6n57nEogCT0XrxOguzMGbpn45Tikq4KHHVCR3mIKneP3bObG5NkY2S8TQ4K+ZeLCFI3AV4NdvvrJHvJDTwKRAqgP0m69nzAb4vMi194FJ7CfTXPpiE/vhjPAXbxHYuHkkCv3jcxMAzjZj2oMFkbP3lrmALnCk=',
-    'value': '2.000'
+    'value': '2.000',
+    'register': 'Usuario y clave'
   },
   {
     'id': 12,
@@ -93,6 +104,7 @@ export const eps = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://login.sura.com/sso/servicelogin.aspx?continueTo=https%3A%2F%2Fportaleps.epssura.com%2FServiciosUnClick%2F&service=epssura',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'Usuario y clave'
   }
 ]

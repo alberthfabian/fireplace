@@ -40,6 +40,11 @@ export const Div = styled.div `
   }
 `
 
+export const Register = styled.div ` 
+  text-align: center;
+  color: ${WHITE};
+`
+
 export const Document = styled.button ` 
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;

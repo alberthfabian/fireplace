@@ -28,6 +28,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument}
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -45,6 +46,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -62,6 +64,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -79,6 +82,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -96,6 +100,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -113,6 +118,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -130,6 +136,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>
@@ -147,6 +154,7 @@ const Home = () => {
               linkVideo={document.linkVideo} 
               linkDocument={document.linkDocument} 
               value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
             />
           ))}
         </Card>

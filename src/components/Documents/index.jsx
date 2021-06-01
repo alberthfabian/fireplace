@@ -1,14 +1,14 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
-import { Div, Document, Video, Link, Value } from './Styled';
+import { Div, Document, Video, Link, Value, Register } from './Styled';
 
-const index = ({name, video, linkVideo, linkDocument, value}) => {
+const index = ({name, video, linkVideo, linkDocument, value, register}) => {
 
   const page = (page) => {
     window.open(page)
   }
-
+  console.log('register', register);
   return (
     <Div>
       <span className="tooltiptext">{name}</span>
@@ -21,6 +21,9 @@ const index = ({name, video, linkVideo, linkDocument, value}) => {
       <Value>
         {value ? `$ ${value}` : value}
       </Value>
+      <Register>
+        {register}
+      </Register>
     </Div>
   );
 };

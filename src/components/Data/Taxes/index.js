@@ -5,7 +5,8 @@ export const taxes = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://oficinavirtual.shd.gov.co/predial/',
-    'value': '1.500'
+    'value': '1.500',
+    'register': 'Chip y No. de identificación'
   },
   {
     'id': 2,
@@ -13,7 +14,8 @@ export const taxes = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://oficinavirtual.shd.gov.co/vehiculos/',
-    'value': '1.500'
+    'value': '1.500',
+    'register': 'Placa y No. de identificación'
   },
   {
     'id': 3,
@@ -21,7 +23,8 @@ export const taxes = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://impuvehiculo.cundinamarca.gov.co/sivervcundinamarca/liquidacionweb/primeraa.php',
-    'value': '1.500'
+    'value': '1.500',
+    'register': 'Placa'
   },
   {
     'id': 4,
@@ -29,7 +32,8 @@ export const taxes = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://catastroenlinea.catastrobogota.gov.co/cfoca/Servicios/ConsultaChip.jspx',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'Dirección'
   },
   {
     'id': 5,
@@ -37,6 +41,7 @@ export const taxes = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://consultas.transitobogota.gov.co:8010/publico/index3.php',
-    'value': '1.000'
+    'value': '1.000',
+    'register': 'No. de identificación'
   }
 ]
