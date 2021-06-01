@@ -4,7 +4,7 @@ export const criminalRecord = [
     'name': 'PROCURADURÍA GENERAL DE LA NACIÓN',
     'video': 'Video Tutorial',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
-    'linkDocument': 'https://apps.procuraduria.gov.co/webcert/Certificado.aspx?t=dAylAkFT/gSkkvpDoI89aORiq2C8LI3z9uHAnBFaF08/32nPrGQhH4HhIkyJHgMD30HMssetl+8td+DYITkVVnxB9Xk0RuiK11R90hMIOfFipvVlkwZR+ZjqHUuiB4weW8T9vSbEQL83gQVd8FjpjcqL5XBvjk89PEX8tf3eHevJgIDWDAm6iWRPb4HhiOqcXmsk2ZIc7yC+GyawwedNX5gP8L9zSe+C&tpo=2',
+    'linkDocument': 'https://www.procuraduria.gov.co/portal/Certificado-de-Antecedentes.page',
     'value': '1.000'
   },
   {
