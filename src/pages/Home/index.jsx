@@ -11,7 +11,7 @@ const Home = () => {
 
   const { isAuthenticated, user } = useAuth0();
 
-  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police } = useServer();
+  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police, sisben } = useServer();
 
   return (
     <Fragment>
@@ -55,6 +55,23 @@ const Home = () => {
       <Div>
         <Card>
           {eps.map(document => (
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+            />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>SISBEN</Title>
+      </div>
+      <Div>
+        <Card>
+          {sisben.map(document => (
             <Documents 
               key={document.id} 
               name={document.name} 

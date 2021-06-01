@@ -9,6 +9,7 @@ import { taxes } from '../components/Data/Taxes';
 import { publicReceipts } from '../components/Data/PublicReceipts';
 import { dian } from '../components/Data/Dian';
 import { police } from '../components/Data/Police';
+import { sisben } from '../components/Data/Sisben';
 
 const Server = React.createContext();
 
@@ -42,7 +43,8 @@ export function ServerProvider(props) {
       taxes,
       publicReceipts,
       dian,
-      police
+      police,
+      sisben
     })
   }, [onlyFireplace, Open, ImgFire, ModalClose]);
 
