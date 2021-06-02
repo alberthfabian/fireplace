@@ -11,7 +11,7 @@ const Home = () => {
 
   const { isAuthenticated, user } = useAuth0();
 
-  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police, sisben } = useServer();
+  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police, sisben, runt } = useServer();
 
   return (
     <Fragment>
@@ -147,6 +147,24 @@ const Home = () => {
       <Div>
         <Card>
           {dian.map(document => (
+            <Documents 
+              key={document.id} 
+              name={document.name} 
+              video={document.video} 
+              linkVideo={document.linkVideo} 
+              linkDocument={document.linkDocument} 
+              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              register={document.register}
+            />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>RUNT Y CONSULTA DE COMPARENDOS</Title>
+      </div>
+      <Div>
+        <Card>
+          {runt.map(document => (
             <Documents 
               key={document.id} 
               name={document.name} 
