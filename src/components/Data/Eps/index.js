@@ -4,7 +4,7 @@ export const eps = [
     'name': 'ADRES FOSYGA',
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
-    'linkDocument': 'https://www.adres.gov.co/BDUA/Consulta-Afiliados-BDUA',
+    'linkDocument': 'https://aplicaciones.adres.gov.co/bdua_internet/Pages/ConsultarAfiliadoWeb.aspx',
     'value': '1.000',
     'register': 'No. de identificación'
   },
@@ -106,5 +106,14 @@ export const eps = [
     'linkDocument': 'https://login.sura.com/sso/servicelogin.aspx?continueTo=https%3A%2F%2Fportaleps.epssura.com%2FServiciosUnClick%2F&service=epssura',
     'value': '1.000',
     'register': 'Usuario y clave'
+  },
+  {
+    'id': 13,
+    'name': 'MI VACUNA',
+    'video': 'Video',
+    'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
+    'linkDocument': 'https://mivacuna.sispro.gov.co/MiVacuna/Account/Login',
+    'value': '2.500',
+    'register': 'No. de identificación y fecha expedición documento'
   }
 ]
