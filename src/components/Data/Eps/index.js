@@ -114,6 +114,6 @@ export const eps = [
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://mivacuna.sispro.gov.co/MiVacuna/Account/Login',
     'value': '2.500',
-    'register': 'No. de identificación y fecha expedición documento'
+    'register': 'No de identificación y fecha expedición documento'
   }
 ]
