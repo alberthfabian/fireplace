@@ -32,7 +32,7 @@ export const pensionAndCesantias = [
     'video': 'Video',
     'linkVideo': 'https://www.youtube.com/channel/UCvi2KWTO8kKJZUO8cdJ2b6g',
     'linkDocument': 'https://www.porvenir.com.co/web/certificados-y-extractos/certificado-de-afiliacion',
-    'value': '1.000',
+    'value': '2.000',
     'register': 'No. de identificación'
   },
   {
