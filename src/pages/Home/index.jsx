@@ -1,17 +1,27 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from "react";
 // import background from '../../assets/Images/Background.jpg';
 // import Fireplace from '../Fireplace';
-import Documents from '../../components/Documents';
-import Info from '../Info';
-import { useServer } from '../../context'; 
-import { Title, Div, Card } from './Styled';
-import { useAuth0 } from '@auth0/auth0-react';
+import Documents from "../../components/Documents";
+import Info from "../Info";
+import { useServer } from "../../context";
+import { Title, Div, Card } from "./Styled";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
-
   const { isAuthenticated, user } = useAuth0();
 
-  const { criminalRecord, eps, pensionAndCesantias, taxes, publicReceipts, dian, police, sisben, runt } = useServer();
+  const {
+    criminalRecord,
+    eps,
+    pensionAndCesantias,
+    taxes,
+    publicReceipts,
+    dian,
+    police,
+    sisben,
+    runt,
+    codensa,
+  } = useServer();
 
   return (
     <Fragment>
@@ -20,14 +30,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {criminalRecord.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
+          {criminalRecord.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
               linkDocument={document.linkDocument}
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -38,14 +52,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {police.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {police.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -56,14 +74,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {eps.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {eps.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -74,14 +96,40 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {sisben.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {sisben.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
+              register={document.register}
+            />
+          ))}
+        </Card>
+      </Div>
+      <div>
+        <Title>CODENSA</Title>
+      </div>
+      <Div>
+        <Card>
+          {codensa.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -92,14 +140,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {pensionAndCesantias.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {pensionAndCesantias.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -110,14 +162,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {taxes.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {taxes.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -128,14 +184,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {publicReceipts.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {publicReceipts.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -146,14 +206,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {dian.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {dian.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -164,14 +228,18 @@ const Home = () => {
       </div>
       <Div>
         <Card>
-          {runt.map(document => (
-            <Documents 
-              key={document.id} 
-              name={document.name} 
-              video={document.video} 
-              linkVideo={document.linkVideo} 
-              linkDocument={document.linkDocument} 
-              value={isAuthenticated && user.email === process.env.REACT_APP_EMAIL ? document.value : '' }
+          {runt.map((document) => (
+            <Documents
+              key={document.id}
+              name={document.name}
+              video={document.video}
+              linkVideo={document.linkVideo}
+              linkDocument={document.linkDocument}
+              value={
+                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
+                  ? document.value
+                  : ""
+              }
               register={document.register}
             />
           ))}
@@ -185,7 +253,7 @@ const Home = () => {
         </Data>
       </Div>
       <Fireplace/> */}
-      <Info/>
+      <Info />
     </Fragment>
   );
 };
