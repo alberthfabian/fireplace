@@ -114,28 +114,6 @@ const Home = () => {
         </Card>
       </Div>
       <div>
-        <Title>CODENSA</Title>
-      </div>
-      <Div>
-        <Card>
-          {codensa.map((document) => (
-            <Documents
-              key={document.id}
-              name={document.name}
-              video={document.video}
-              linkVideo={document.linkVideo}
-              linkDocument={document.linkDocument}
-              value={
-                isAuthenticated && user.email === process.env.REACT_APP_EMAIL
-                  ? document.value
-                  : ""
-              }
-              register={document.register}
-            />
-          ))}
-        </Card>
-      </Div>
-      <div>
         <Title>PENSIÓN Y CESANTÍAS</Title>
       </div>
       <Div>

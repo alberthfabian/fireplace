@@ -10,7 +10,6 @@ import { publicReceipts } from "../components/Data/PublicReceipts";
 import { dian } from "../components/Data/Dian";
 import { police } from "../components/Data/Police";
 import { sisben } from "../components/Data/Sisben";
-import { codensa } from "../components/Data/Codensa";
 import { runt } from "../components/Data/Runt";
 
 const Server = React.createContext();
@@ -47,7 +46,6 @@ export function ServerProvider(props) {
       police,
       sisben,
       runt,
-      codensa,
     };
   }, [onlyFireplace, Open, ImgFire, ModalClose]);
 
